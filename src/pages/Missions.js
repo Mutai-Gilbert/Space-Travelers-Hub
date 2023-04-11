@@ -23,7 +23,7 @@ const Missions = () => {
     dispatch(joinMissions(missionId));
   };
   let missionsContent = <p>Loading...</p>;
-  if (missionsContent > 0) {
+  if (missionsContent.length > 0) {
     missionsContent = (
       <>
         <h1>Missions</h1>
