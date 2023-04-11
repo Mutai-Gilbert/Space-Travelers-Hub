@@ -46,7 +46,7 @@
 }
 
 .table td button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -68,7 +68,7 @@
 }
 
 .table td button.btn_join_mission {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .table td button.btn_join_mission:hover {

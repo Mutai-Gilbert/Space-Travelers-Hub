@@ -42,7 +42,7 @@ const Missions = () => {
               <tr key={mission.mission_id}>
                 <td className={classes.name}>{mission.mission_name}</td>
                 <td className={classes.description}>{mission.description}</td>
-                <td className={classes.reserved}>
+                <td className={classes.status}>
                   {mission.reserved ? (
                     <span className={classes.member}>Active Member</span>
                   ) : (
