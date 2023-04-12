@@ -34,7 +34,7 @@ const missions = createSlice({
       return { missions: [...newState] };
     },
     leaveMissions(state, action) {
-      const newMission = state.missions.map((mission) => {
+      const newState = state.missions.map((mission) => {
         if (mission.mission_id === action.payload) {
           return {
             ...mission,
@@ -43,7 +43,7 @@ const missions = createSlice({
         }
         return mission;
       });
-      return { missions: [...newMission] };
+      return { missions: [...newState] };
     },
   },
   extraReducers: (builder) => {
