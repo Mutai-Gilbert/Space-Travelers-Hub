@@ -31,28 +31,21 @@ const missions = createSlice({
         }
         return mission;
       });
-      return {
-        ...state,
-        missions: [...state.missions, newMission],
-      };
+      return { missions: [...newMission] };
+    },
+    leaveMissions(state, action) {
+      const newMission = state.missions.map((mission) => {
+        if (mission.mission_id === action.payload) {
+          return {
+            ...mission,
+            reserved: false,
+          };
+        }
+        return mission;
+      });
+      return { missions: [...newMission] };
     },
   },
-  leaveMissions(state, action) {
-    const newMission = state.missions.map((mission) => {
-      if (mission.mission_id === action.payload) {
-        return {
-          ...mission,
-          reserved: false,
-        };
-      }
-      return mission;
-    });
-    return {
-      ...state,
-      missions: [...state.missions, newMission],
-    };
-  },
-
   extraReducers: (builder) => {
     builder.addCase(getMissions.fulfilled, (state, action) => ({
       ...state,
