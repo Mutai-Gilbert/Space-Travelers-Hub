@@ -1,32 +1,15 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { getMissions, joinMissions, leaveMissions } from '../redux/mission/missionSlice';
+import { missionsActions } from '../redux/mission/missionSlice';
 import classes from '../redux/mission/Missions.module.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.mission.missions);
-  const status = useSelector((state) => state.mission.status);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (status === 'idle') {
-      dispatch(getMissions());
-    }
-  },
-  [status, dispatch]);
-
-  const handleLeaveMission = (missionId) => {
-    dispatch(leaveMissions(missionId));
-  };
-
-  const handleJoinMission = (missionId) => {
-    dispatch(joinMissions(missionId));
-  };
   let missionsContent = <p>Loading...</p>;
-  if (missionsContent.length > 0) {
+  if (missions.length > 0) {
     missionsContent = (
       <>
-        <h1>Missions</h1>
         <table className={classes.table}>
           <thead>
             <tr>
@@ -44,7 +27,7 @@ const Missions = () => {
                 <td className={classes.description}>{mission.description}</td>
                 <td className={classes.status}>
                   {mission.reserved ? (
-                    <span className={classes.member}>Active Member</span>
+                    <span className={classes.active_member}>Active Member</span>
                   ) : (
                     <span className={classes.not_a_member}>Not A Member</span>
                   )}
@@ -52,9 +35,9 @@ const Missions = () => {
                 </td>
                 <td>
                   {mission.reserved ? (
-                    <button type="button" className={classes.btn_leavemission} onClick={() => handleLeaveMission(mission.mission_id)}>Leave Mission</button>
+                    <button type="button" className={classes.btn_leavemission} onClick={() => dispatch(missionsActions.leaveMissions(mission.missionId))}>Leave Mission</button>
                   ) : (
-                    <button type="button" className={classes.btn_join_mission} onClick={() => handleJoinMission(mission.mission_id)}>Join Mission</button>
+                    <button type="button" className={classes.btn_join_mission} onClick={() => dispatch(missionsActions.joinMissions(mission.missionId))}>Join Mission</button>
                   )}
                 </td>
               </tr>
@@ -66,7 +49,7 @@ const Missions = () => {
     );
   }
   return (
-    <div className={classes.missions}>
+    <div>
       {missionsContent}
     </div>
   );

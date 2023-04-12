@@ -31,18 +31,26 @@
   padding: 12px;
 }
 
-.table td span.member {
-  background-color: green;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
 .table td span.not_a_member {
   background-color: red;
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
+  font-weight: bold;
+}
+
+.status {
+  width: 15%;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.table td span.active_member {
+  background-color: green;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .table td button {
