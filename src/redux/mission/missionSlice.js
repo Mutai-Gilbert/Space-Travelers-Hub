@@ -54,5 +54,5 @@ const missions = createSlice({
   },
 });
 
-export const missionsActions = missions.actions;
+export const { joinMissions, leaveMissions } = missions.actions;
 export default missions;

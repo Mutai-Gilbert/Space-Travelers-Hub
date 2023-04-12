@@ -1,10 +1,15 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { missionsActions } from '../redux/mission/missionSlice';
+import { useEffect } from 'react';
+import { leaveMissions, joinMissions, getMissions } from '../redux/mission/missionSlice';
 import classes from '../redux/mission/Missions.module.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.mission.missions);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMissions());
+  }, [dispatch]);
 
   let missionsContent = <p>Loading...</p>;
   if (missions.length > 0) {
@@ -35,9 +40,9 @@ const Missions = () => {
                 </td>
                 <td>
                   {mission.reserved ? (
-                    <button type="button" className={classes.btn_leavemission} onClick={() => dispatch(missionsActions.leaveMissions(mission.missionId))}>Leave Mission</button>
+                    <button type="button" className={classes.btn_leavemission} onClick={() => dispatch(leaveMissions(mission.missionId))}>Leave Mission</button>
                   ) : (
-                    <button type="button" className={classes.btn_join_mission} onClick={() => dispatch(missionsActions.joinMissions(mission.missionId))}>Join Mission</button>
+                    <button type="button" className={classes.btn_join_mission} onClick={() => dispatch(joinMissions(mission.missionId))}>Join Mission</button>
                   )}
                 </td>
               </tr>
