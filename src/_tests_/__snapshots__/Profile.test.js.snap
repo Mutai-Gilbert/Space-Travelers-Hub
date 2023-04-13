@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Profile components renders correctly 1`] = `
+<section
+  className="reserverd_section"
+>
+  <div
+    className="reserved_missions"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <p>
+      No missions reserved
+    </p>
+  </div>
+</section>
+`;
