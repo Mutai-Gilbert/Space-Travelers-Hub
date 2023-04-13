@@ -50,14 +50,10 @@
   font-weight: 30;
 }
 
-ul {
-  padding-left: 10px;
-}
-
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 90%;
+  width: 70%;
 }
 
 td {
@@ -65,4 +61,24 @@ td {
   text-align: left;
   padding: 8px;
   width: 50vw;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.profilePage {
+  display: flex;
+  gap: 30px;
+}
+
+.Width {
+  width: 70%;
+}
+
+.display {
+  padding: 0;
 }
