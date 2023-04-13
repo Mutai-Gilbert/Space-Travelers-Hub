@@ -7,7 +7,7 @@ const ProfilePage = () => (
   </div>
 );
 export default ProfilePage;
-=======
+=========
 const Profile = () => {
   const rocketList = useSelector((state) => state.rocket);
   const rocketFiltered = rocketList.rocket.filter((rocket) => rocket.reserved === true);
@@ -58,4 +58,4 @@ const Profile = () => {
   );
 };
 export default Profile;
->>>>>>> dev
+>>>>>>>>> Temporary merge branch 2
