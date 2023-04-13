@@ -1,39 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  padding: 20px 1px 3px 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.image {
+  width: 20vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.margin {
+  margin: 0;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.reserverocket {
+  cursor: pointer;
+  width: 20%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.reservedbutton {
+  cursor: pointer;
+  width: 20%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid black;
+  letter-spacing: 0.5px;
+  color: rgb(113, 108, 108);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.reservation {
+  width: fit-content;
+  padding: 0;
+  border-radius: 3px;
+  background-color: rgb(44, 117, 117);
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 5px;
+  font-weight: 30;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+  width: 50vw;
 }
