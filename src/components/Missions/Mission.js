@@ -1,15 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { leaveMissions, joinMissions, getMissions } from '../../redux/mission/missionSlice';
+import { leaveMissions, joinMissions } from '../../redux/mission/missionSlice';
 import classes from './Missions.module.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.mission.missions);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
 
   let missionsContent = <p>Loading...</p>;
   if (missions.length > 0) {
