@@ -22,9 +22,9 @@ const Profile = () => {
     );
   }
   return (
-    <section className={classes.reserverd_section}>
+    <section className="profilePage">
       <div className={classes.reserved_missions}>
-        <h2>My Missions</h2>
+        <h2 className="title">My Missions</h2>
         {missionContent}
       </div>
       <div>
@@ -35,18 +35,13 @@ const Profile = () => {
               rocketFiltered.map((rocket) => (
                 <tr key={rocket.id}>
                   <td>
-                    <li key={rocket.id}>
-                      <p>
-                        {' '}
-                        {rocket.rocketName}
-                      </p>
-                    </li>
+                    {rocket.rocketName}
                   </td>
                 </tr>
               ))
             ) : (
               <li>
-                <h3 className="title-three"> no booked rocket at the moments </h3>
+                <p className="title-three">No Rocket booked </p>
               </li>
             )}
           </ul>

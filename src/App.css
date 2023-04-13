@@ -78,3 +78,7 @@ td {
 .Width {
   width: 70%;
 }
+
+.display {
+  padding: 0;
+}
