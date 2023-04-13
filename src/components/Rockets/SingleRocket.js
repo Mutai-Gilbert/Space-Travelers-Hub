@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { rocketActions } from '../redux/rockets/rocketsSlice';
+import { rocketActions } from '../../redux/rockets/rocketsSlice';
 
 const Rocket = ({
   id, rocketName, description, Image, reserved,
