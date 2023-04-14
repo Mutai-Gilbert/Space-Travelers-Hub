@@ -12,19 +12,22 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-    - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Space Travellers' Hub](#-space-travellers-hub)
+  - [🛠️ Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+  - [To get a local copy up and running, follow these steps.](#to-get-a-local-copy-up-and-running-follow-these-steps)
+    - [Setup](#setup)
+    - [Running the app](#running-the-app)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -32,7 +35,7 @@
 
 **Space Travellers' Hub** Is a web application built with react and redux and spaceXAPI. Users can view rockets and missions and create resrvations.
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠️ Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -86,10 +89,16 @@ To get app running:
 
 👤 **Author1**
 
-- GitHub: [Ernest Korir](https://github.com/ernestkorir)
+- GitHub: [@ErnestKorir](https://github.com/githubhandle)
+- Twitter: [twitter](https://twitter.com/ernestbore3)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ernest-bore-3b6042211)
 
+👤 **Author2**
 👤 **Gilbert Mutai**
 
+- GitHub: [@githubhandle](https://github.com/Mutai-Gilbert)
+- Twitter: [@twitterhandle](https://twitter.com/@nerdmutai)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mutai-gilbert-2a5a42137/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +122,7 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+## ⭐ Show your support <a name="support"></a>
 
 If you like this project star it.
 
