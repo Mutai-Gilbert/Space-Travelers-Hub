@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getMissions } from './redux/mission/missionSlice';
-import ErrorPage from './pages/ErrorPage';
 import MissionsPage from './pages/MissionsPage';
 import Profile from './pages/Profile';
 import Rockets from './pages/Rockets';
@@ -23,7 +22,6 @@ const App = () => {
         <Route path="/missions" element={<MissionsPage />} />
         <Route path="/profile" element={<Profile />} />
       </Route>
-      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 };
