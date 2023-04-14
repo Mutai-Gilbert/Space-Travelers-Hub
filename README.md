@@ -57,7 +57,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link coming soon]()
+- [Live Demo Link](https://react-redux-group-project-b78u.vercel.app)
 
 <!-- GETTING STARTED -->
 
