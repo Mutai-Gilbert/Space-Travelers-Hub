@@ -1,0 +1,84 @@
+/* Missions.module.css */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+  margin: 0 auto;
+}
+
+.table thead th {
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: left;
+  padding: 12px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: none;
+}
+
+.table td {
+  padding: 12px;
+}
+
+.table td span.not_a_member {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status {
+  width: 15%;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.table td span.active_member {
+  background-color: green;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.table td button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table td button:hover {
+  background-color: #3e8e41;
+}
+
+.table td button.btn_leavemission {
+  background-color: #f44336;
+}
+
+.table td button.btn_leavemission:hover {
+  background-color: #d32f2f;
+}
+
+.table td button.btn_join_mission {
+  background-color: #4caf50;
+}
+
+.table td button.btn_join_mission:hover {
+  background-color: #3e8e41;
+}
