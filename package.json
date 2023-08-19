@@ -20,6 +20,7 @@
     "redux-axios": "^0.0.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
+    "renderer": "^0.1.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

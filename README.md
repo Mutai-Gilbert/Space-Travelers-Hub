@@ -14,7 +14,11 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Space Travellers' Hub](#-space-travellers-hub)
+<<<<<<< HEAD
   - [🛠️ Built With ](#️-built-with-)
+=======
+  - [🛠️ Built With ](#-built-with-)
+>>>>>>> origin/dev
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -25,7 +29,11 @@
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
+<<<<<<< HEAD
   - [⭐ Show your support ](#-show-your-support-)
+=======
+  - [⭐ Show your support ](#️-show-your-support-)
+>>>>>>> origin/dev
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
@@ -57,7 +65,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+<<<<<<< HEAD
 - [Live Demo Link coming soon]()
+=======
+- [Live Demo Link](https://react-redux-group-project-b78u.vercel.app)
+>>>>>>> origin/dev
 
 <!-- GETTING STARTED -->
 
